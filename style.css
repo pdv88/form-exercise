@@ -26,6 +26,11 @@ body {
     font-family: sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;   
+}
+
 .image-container {
     height: 100vh;
     background-image: url("./images/odin-statue.jpg");
@@ -63,14 +68,75 @@ body {
 
 .right {
     grid-template-columns: repeat(1, auto);
-    align-content: space-between;
-    margin: 5rem;   
+    align-content: space-between;   
 }
 
 .message {
+    margin: 5rem;
     font-size: 2rem;
     align-items: center;
     gap: 1rem;
 }
 
+form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 3rem 5rem;
+    gap: 2rem;
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0px 0px 50px rgb(117, 117, 117);
+}
 
+form h1 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 2rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 0;
+    width: 90%;
+}
+
+
+
+input:focus {
+    box-shadow: 5px 5px 5px gray;
+}
+
+input:invalid {
+    border:2px solid rgb(255, 199, 199) !important;
+}
+
+input:valid {
+    border:2px solid rgb(197, 252, 197) !important;
+}
+
+.login {
+    display: grid;
+    margin: 5rem;
+    gap: 1rem;
+}
+
+.register {
+    width: 30%;
+    height: 3rem;
+    background-color: rgb(211, 162, 0);
+    color: white;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0;
+}
+
+.register:active {
+    opacity: 80%;
+}
