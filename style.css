@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+    font-family: 'norsebold';
+    text-align: center;
+    font-size: 5rem;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+    margin: auto;
+    max-width: 1920px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.image-container {
+    height: 100vh;
+    background-image: url("./images/odin-statue.jpg");
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+
+
+.logoImg {
+    height: 200px;
+}
+
+
+.text-logo {
+    height: auto;
+    font-size: 12rem;
+    text-align: center;
+    font-family: 'norsebold';
+    margin: 0;
+}
+
+.logo {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: gray;
+    opacity: 30%;
+    padding: 2rem;
+    margin-right: 5rem;
+}
+
+.right {
+    grid-template-columns: repeat(1, auto);
+    align-content: space-between;
+    margin: 5rem;   
+}
+
+.message {
+    font-size: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+
