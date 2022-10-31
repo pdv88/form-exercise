@@ -112,7 +112,7 @@ input:focus {
     box-shadow: 5px 5px 5px gray;
 }
 
-input:invalid {
+input:not(:focus):not(:placeholder-shown):invalid {
     border:2px solid rgb(255, 199, 199) !important;
 }
 
@@ -139,4 +139,6 @@ input:valid {
 
 .register:active {
     opacity: 80%;
+    
 }
+
