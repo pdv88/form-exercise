@@ -42,6 +42,7 @@ a {
 
 .logoImg {
     height: 200px;
+    opacity: 50%;
 }
 
 
@@ -60,8 +61,8 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    background-color: gray;
-    opacity: 30%;
+    backdrop-filter: blur(20px) sepia(80%);
+    color: rgba(201, 201, 201, 0.534);
     padding: 2rem;
     margin-right: 5rem;
 }
